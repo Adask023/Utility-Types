@@ -31,7 +31,7 @@ function run() {
   thisParameterExample();
   omitThisParameterExample();
 }
-// run();
+run();
 
 // function check(x: any) {
 //   if (typeof x === "number") {
