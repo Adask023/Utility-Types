@@ -9,7 +9,10 @@ export const partialExample = () => {
     isAvailable: boolean;
   }
 
+  // type LessHuman = Partial<Human>;
+
   function updateInformations(human: Human, fieldsToUpdate: Partial<Human>) {
+    console.log(fieldsToUpdate);
     return { ...human, ...fieldsToUpdate };
   }
 
@@ -23,8 +26,9 @@ export const partialExample = () => {
 
   const updatedEmployee2 = updateInformations(employee, {
     isAvailable: true,
+    height: 1127367,
   });
 
-  // console.log(employee);
-  // console.log(updatedEmployee2);
+  console.log(employee);
+  console.log(updatedEmployee2);
 };
