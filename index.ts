@@ -43,3 +43,23 @@ run();
 // }
 
 // check(12);
+
+// function assertUnreachable(x: string): never {
+//   throw new Error();
+// }
+
+// function getValue(x: string): number {
+//   switch (x) {
+//     case "low":
+//       return 0;
+//     case "medium":
+//       return 1;
+//   }
+//   assertUnreachable(x);
+// }
+
+// let aHi: any = "hi";
+// let uHi: unknown = 12;
+
+// let hello: never = aHi;
+// let hello2: never = uHi;
